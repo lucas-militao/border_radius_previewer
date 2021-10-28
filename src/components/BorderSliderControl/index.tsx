@@ -9,11 +9,15 @@ import {
 interface Props {
   horizontal?: boolean;
   inverted?: boolean;
+  value: number;
+  setValue: (value: number) => void;
 }
 
 export function BorderSliderControl({
   horizontal = false,
-  inverted = false
+  inverted = false,
+  value,
+  setValue,
 }: Props) {
 
   return (
@@ -27,6 +31,8 @@ export function BorderSliderControl({
         minimumTrackTintColor="#FF0000"
         maximumTrackTintColor="#000000"
         inverted={inverted}
+        value={value}
+        onValueChange={(value) => setValue(value)}
       />
     </Container>
   );

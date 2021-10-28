@@ -20,6 +20,8 @@ export function Box({
 
   return (
     <Container 
+      boxWidth={250}
+      boxHeight={250}
       borderTopLeft={borderTopLeft}
       borderTopRight={borderTopRight}
       borderBottomLeft={borderBottomLeft}
