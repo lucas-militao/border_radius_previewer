@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "border-radius-previewer",
+    "slug": "border-radius-previewer",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "border-radius-previewer"
+}
