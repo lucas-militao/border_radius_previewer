@@ -5,6 +5,8 @@ import {
 } from './styles';
 
 interface Props {
+  width?: number,
+  height?: number,
   borderTopLeft?: number,
   borderTopRight?: number,
   borderBottomLeft?: number,
@@ -12,6 +14,8 @@ interface Props {
 }
 
 export function Box({
+  width = 250,
+  height = 250,
   borderTopLeft = 0,
   borderTopRight = 0,
   borderBottomLeft = 0,
@@ -20,8 +24,8 @@ export function Box({
 
   return (
     <Container 
-      boxWidth={250}
-      boxHeight={250}
+      boxWidth={width}
+      boxHeight={height}
       borderTopLeft={borderTopLeft}
       borderTopRight={borderTopRight}
       borderBottomLeft={borderBottomLeft}
