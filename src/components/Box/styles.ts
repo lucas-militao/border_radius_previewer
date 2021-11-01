@@ -13,10 +13,10 @@ export const Container = styled.View<Props>`
   ${({ boxWidth, boxHeight, borderTopLeft, borderTopRight, borderBottomLeft, borderBottomRight }) => css`
     width: ${boxWidth}px;
     height: ${boxHeight}px;
-    border-top-left-radius: ${borderTopLeft * boxWidth}px;
-    border-top-right-radius: ${borderTopRight * boxWidth}px;
-    border-bottom-left-radius: ${borderBottomLeft * boxWidth}px;
-    border-bottom-right-radius: ${borderBottomRight * boxWidth}px;
+    border-top-left-radius: ${(borderTopLeft/2) * boxWidth}px;
+    border-top-right-radius: ${(borderTopRight/2) * boxWidth}px;
+    border-bottom-left-radius: ${(borderBottomLeft/2) * boxWidth}px;
+    border-bottom-right-radius: ${(borderBottomRight/2) * boxWidth}px;
   `}
 
 
